@@ -1,0 +1,36 @@
+/LineSegment/
+    ├── Origin/
+    │       ├── x: 0
+    │       ├── y: 0
+    │       └── z: 0
+    ├── Direction/
+    │       ├── x: 5
+    │       ├── y: 5
+    │       └── z: -5
+    ├── Parameters/
+    │       ├── t_min: 0    # Start of the segment
+    │       ├── t_max: 1    # End of the segment
+    │       └── Precision: 3  # Number of subdivisions (e.g., ternary precision)
+    ├── ComputedPoints/
+    │       ├── Point_0/     # Point at t = 0
+    │       │       ├── x: 0
+    │       │       ├── y: 0
+    │       │       └── z: 0
+    │       ├── Point_1/     # Point at t = 1/3
+    │       │       ├── x: 1.67
+    │       │       ├── y: 1.67
+    │       │       └── z: -1.67
+    │       ├── Point_2/     # Point at t = 2/3
+    │       │       ├── x: 3.33
+    │       │       ├── y: 3.33
+    │       │       └── z: -3.33
+    │       └── Point_3/     # Point at t = 1
+    │               ├── x: 5
+    │               ├── y: 5
+    │               └── z: -5
+    └── Functions/
+            ├── RetrievePoint(t: float)  # Function to calculate a point for any t
+            ├── Subdivide(n: int)       # Function to divide the segment into n points
+            ├── Length()                # Calculate the segment's length
+            ├── Symmetry()              # Return symmetric points across the segment
+            └── DirectionalState(t)     # Output ternary state (-1, 0, +1) for t
