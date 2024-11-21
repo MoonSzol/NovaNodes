@@ -1,0 +1,22 @@
+/Vector/
+    ├── Components/
+    │       ├── x: 5
+    │       ├── y: 5
+    │       └── z: -5
+    ├── Properties/
+    │       ├── Magnitude: 8.66          # Length of the vector
+    │       ├── NormalizedVector/
+    │       │       ├── x: 0.577
+    │       │       ├── y: 0.577
+    │       │       └── z: -0.577
+    │       ├── Direction/
+    │       │       ├── Azimuth: 45°      # Angle in XY plane
+    │       │       └── Elevation: -35.26° # Angle from the XY plane to the vector
+    ├── Functions/
+    │       ├── Normalize()                # Compute unit vector
+    │       ├── DotProduct(vector: Vector) # Compute dot product with another vector
+    │       ├── CrossProduct(vector: Vector) # Compute cross product with another vector
+    │       ├── Scale(factor: float)       # Scale the vector by a scalar
+    │       ├── Add(vector: Vector)        # Add another vector
+    │       ├── Subtract(vector: Vector)   # Subtract another vector
+    │       └── AngleWith(vector: Vector)  # Compute angle between vectors
